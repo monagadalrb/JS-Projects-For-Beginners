@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.control-buttons {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #67546464;
+}
+.control-buttons > span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: #961b67;
+  font-size: 30px;
+  padding: 15px 25px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.info-container {
+  width: 1080px;
+  margin: 10px auto 0;
+  background-color: #f6f6f6;
+  padding: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #2196f3;
+}
+.memory-game-blocks {
+  width: 1100px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.memory-game-blocks.no-clicking {
+  pointer-events: none;
+}
+.memory-game-blocks .game-block {
+  height: 180px;
+  transition: transform 0.5s;
+  cursor: pointer;
+  position: relative;
+  flex: 1 0 150px;
+  transform-style: preserve-3d;
+  margin: 0 10px 20px;
+}
+.memory-game-blocks .game-block.is-flipped,
+.memory-game-blocks .game-block.has-matched {
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+.memory-game-blocks .game-block img {
+  width: 100%;
+  height: 178px;
+}
+
+.memory-game-blocks .game-block .front {
+  position: relative;
+  background-color: #ca79d7cd;
+  line-height: 180px;
+}
+.memory-game-blocks .game-block .front::before {
+  content: "\2661";
+  color: #fff;
+  font-size: 130px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.memory-game-blocks .game-block .back {
+  transform: rotateY(180deg);
+}
+.memory-game-blocks .game-block .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 2px solid #2196f3;
+}

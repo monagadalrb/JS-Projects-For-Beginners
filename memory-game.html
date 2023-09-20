@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/memory-game.css" />
+    <title>JS | Memory Game</title>
+  </head>
+  <body>
+    <div class="control-buttons">
+      <span>Start Game</span>
+    </div>
+    <div class="info-container">
+      <div class="name">Hello: <span></span></div>
+      <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+    <div class="memory-game-blocks">
+      <div class="game-block" data-idol-card="RM">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/RM-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="RM">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/RM-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Jin">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/jin-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Jin">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/jin-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Suga">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/suga-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Suga">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/suga-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Jimin">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/jm-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Jimin">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/jm-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Jhope">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/jhope-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Jhope">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/jhope-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="V">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/v-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="V">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/v-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Jungkook">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/JUNGKOOK-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Jungkook">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/JUNGKOOK-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Lisa">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/lisa-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Lisa">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/lisa-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Rose">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/rose-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Rose">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/rose-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Jisoo">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/jisoo-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Jisoo">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/jisoo-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Jennie">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/jennie-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="Jennie">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/jennie-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="K-pop">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/K-pop-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+      <div class="game-block" data-idol-card="K-pop">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="/imgs/K-pop-memory-game.jpg" alt="Cards" />
+        </div>
+      </div>
+    </div>
+    <audio src="/audio/failed.mp3" id="failed" preload="auto"></audio>
+    <audio src="/audio/succes.wav" id="succes" preload="auto"></audio>
+    <script src="/js/memory-game.js"></script>
+  </body>
+</html>
